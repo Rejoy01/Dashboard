@@ -6,6 +6,7 @@ import Logo from "../components/logo/Logo";
 import Menu from "../components/menu/Menu";
 import Shutdown from "../img/Shutdown.png";
 import Header from "../components/Nav/Header";
+import Dashboard from "../components/Dashboard/Dashboard";
 
 const Home = () => {
   return (
@@ -15,21 +16,20 @@ const Home = () => {
         <div className="menu-bars">
           <Menu />
         </div>
-        
       </div>
       <div className="right-side">
         <Header />
+        <Dashboard />
+
       </div>
 
       <div className="log">
-      <button className="Logout">
+        <button className="Logout">
           <span>Logout</span>
           <img src={Shutdown} alt="" />
         </button>
       </div>
-      
     </div>
-
   );
 };
 
