@@ -6,6 +6,8 @@
     display: flex;
     background-color: rgb(2, 20, 53);
     padding: 20px;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
 }
 .right-side{
@@ -13,4 +15,16 @@
     background-color: rgb(204, 223, 236);
     padding-left: 2rem;
     justify-content: center;
+}
+
+.Logout{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: red;
+    ma
+    align-items: center;
+    gap: 0.3rem;
+    height:2rem;
+    background-color: white;
 }

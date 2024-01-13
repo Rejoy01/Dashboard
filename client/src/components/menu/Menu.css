@@ -1,0 +1,25 @@
+.Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.sub{
+    display: flex;
+    color: white;
+    gap: 0.5rem;
+    
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.sub >img{
+    width: 20px;
+}
+
