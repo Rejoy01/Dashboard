@@ -5,6 +5,7 @@ import StatBoard from "../img/StatBoard.png";
 import Logo from "../components/logo/Logo";
 import Menu from "../components/menu/Menu";
 import Shutdown from "../img/Shutdown.png";
+import Header from "../components/Nav/Header";
 
 const Home = () => {
   return (
@@ -16,11 +17,17 @@ const Home = () => {
         </div>
         
       </div>
-      <div className="right-side">Dashboard aksbjgdhabs</div>
+      <div className="right-side">
+        <Header />
+      </div>
+
+      <div className="log">
       <button className="Logout">
-          Logout
+          <span>Logout</span>
           <img src={Shutdown} alt="" />
         </button>
+      </div>
+      
     </div>
 
   );
