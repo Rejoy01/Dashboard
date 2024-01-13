@@ -14,13 +14,15 @@ const Home = () => {
         <div className="menu-bars">
           <Menu />
         </div>
-        <button className="Logout">
+        
+      </div>
+      <div className="right-side">Dashboard aksbjgdhabs</div>
+      <button className="Logout">
           Logout
           <img src={Shutdown} alt="" />
         </button>
-      </div>
-      <div className="right-side">Dashboard aksbjgdhabs</div>
     </div>
+
   );
 };
 
