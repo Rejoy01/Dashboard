@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Home.css"
 import BreifCase from "../img/Briefcase.png"
+import StatBoard from "../img/StatBoard.png"
+import Logo from '../components/logo/Logo'
 const Home = () => {
   return (
     <div className='home'>
         <div className="left-side">
-            <div>
-                <img src={BreifCase} alt="" />
-            </div>
+            <Logo />
         </div>
         <div className='right-side'>
             Dashboard aksbjgdhabs

@@ -4,14 +4,13 @@
 }
 .left-side{
     display: flex;
-    background-color: rgb(3, 42, 114);
+    background-color: rgb(2, 20, 53);
     padding: 20px;
-    align-items: center;
     justify-content: center;
 }
 .right-side{
     display: flex;
-    background-color: lightblue;
+    background-color: rgb(204, 223, 236);
     padding-left: 2rem;
     justify-content: center;
 }
