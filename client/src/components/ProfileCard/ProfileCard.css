@@ -1,0 +1,23 @@
+.Profile-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.Profile-card >img{
+    width: 10rem;
+}
+
+.icons > img{
+    width: 1rem;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+

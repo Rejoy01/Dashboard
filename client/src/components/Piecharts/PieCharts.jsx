@@ -1,30 +1,42 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
-import Typography from '@mui/material/Typography';
-import "./PieCharts.css"
+import "./PieCharts"
 
 const PieCharts = () => {
-  const seriesData = [
-    { id: 0, value: 10,  },
-    { id: 1, value: 15,  },
-    { id: 2, value: 20,  },
-  ];
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    
+    const fetchData = async () => {
+      
+      const response = await fetch('http://localhost:3001/api/pie-chart');
+      const data = await response.json();
+
+      
+      setChartData(data.map((item, index) => ({
+        id: index,
+        value: item.value,
+        label: `Category ${String.fromCharCode(65 + index)}`, // A, B, C, ...
+      })));
+    };
+
+    fetchData();
+  }, []); 
 
   return (
-    <div>
+    <div className='pie'>
       <PieChart
+        colors={["#4af78a", "#80d1a6", "#a6f7c4", "#bff5d3", "#d2f7e0"]}
         series={[
           {
-            data: seriesData,
+            data: chartData,
           },
         ]}
         width={400}
         height={200}
-        disableLegend // disable default legend
       />
-      
     </div>
-  )
-}
+  );
+};
 
 export default PieCharts;

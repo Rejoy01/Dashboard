@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    width: 100%;
+    width: 82%;
     gap: 1rem;
     
 }
@@ -27,15 +27,26 @@
 .Charts{
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: -0.2rem;
     
 }
 
 .p-table{
     background-color: white;
-    width: fit-content;
+    width: auto;
+    margin-top: -1rem;
 }
 
 .pro-sec{
     display: flex;
     gap: 2rem;
+}
+
+.ProfileCard-sec{
+
+    background-color: white;
+    margin-bottom: -1.5rem;
+    border-radius: 15px;
+    margin-top: -1rem;
 }

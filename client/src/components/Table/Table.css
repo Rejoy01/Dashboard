@@ -2,8 +2,8 @@
 .product-table {
  
     border-collapse: collapse;
-    margin-top: 20px;
-    width: 45rem;
+
+    width: 50rem;
   }
   
   .product-table th, .product-table td {
