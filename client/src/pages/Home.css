@@ -1,7 +1,7 @@
 .home{
    display: grid;
    margin: -0.5rem ;
-   grid-template-columns: 13rem auto;
+   grid-template-columns: 13rem 100%;
    
 }
 .left-side{
@@ -36,4 +36,13 @@
     height:2rem;
     width: 100%;
     background-color: white;
+}
+
+@media only screen and (max-width: 993px){
+    .home{
+        
+       
+        grid-template-columns: 13rem auto;
+        
+     }
 }

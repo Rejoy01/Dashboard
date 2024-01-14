@@ -10,7 +10,7 @@ import Dashboard from "../components/Dashboard/Dashboard";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home ">
       <div className="left-side">
         <Logo />
         <div className="menu-bars">

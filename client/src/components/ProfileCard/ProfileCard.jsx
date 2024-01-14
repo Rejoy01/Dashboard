@@ -8,7 +8,7 @@ import Instagram from "../../img/instagram.png"
 
 const ProfileCard = () => {
   return (
-    <div className='Profile-card'>
+    <div className='Profile-card '>
       <img src={ProfileImg} alt="" />
       <span><b>Jhon Doe</b></span>
       <span style={{color:"grey"}}>CEO</span>

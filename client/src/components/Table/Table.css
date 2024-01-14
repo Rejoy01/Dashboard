@@ -3,7 +3,7 @@
  
     border-collapse: collapse;
 
-    width: 50rem;
+    width: 49rem;
   }
   
   .product-table th, .product-table td {
@@ -20,3 +20,23 @@
     background-color: #f9f9f9;
   }
   
+  @media screen and (max-width: 800px) {
+    .product-table {
+        width: 40rem;
+        
+    }
+}
+ 
+
+  @media screen and (max-width: 767px) {
+    .product-table {
+      width: 26.8rem;
+      overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1188px){
+  .product-table {
+    width: 44.8rem;
+
+}
+}
