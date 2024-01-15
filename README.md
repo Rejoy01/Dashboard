@@ -16,8 +16,27 @@ Make sure you have the following software installed on your machine:
 git clone https://github.com/your-username/dashboard-landing-page.git
 cd dashboard-landing-page
 
-# Install project dependencies
+# Install client-side dependencies
+cd client
 npm install
 
-# Start the dashboard
+
+# Install server-side dependencies
+cd ../server
+npm install
+
+# Start the client
+cd client
 npm start
+
+# Open a new terminal and start the server
+cd ../server
+npm start
+
+This will start the client and server applications concurrently.
+
+Visit http://localhost:3000 in your browser to see the client application, and the server will run on http://localhost:3001.
+
+Folder Structure
+client: Frontend code
+server: Backend code
